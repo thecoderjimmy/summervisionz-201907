@@ -98,6 +98,68 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* GENERAL CSS STYLES */
+   html {
+     color: #FFF;
+     background-color: #000;
+   }
+
+   a {
+     color: grey;
+     text-decoration: none;
+   }
+
+   h1, h2, a {
+     font-family: 'Saira', sans-serif;
+   }
+
+   /* NAVIGATION BAR STYLES */
+   nav {
+     display: block;
+     width: 100%;
+     text-align: center;
+     position: fixed;
+     transform: rotate(90deg);
+     left: 47%;
+     bottom: 50%;
+   }
+
+   nav a {
+     margin: 0 20px;
+   }
+
+   nav span {
+     display: inline-block;
+     width: 50px;
+     height: 1px;
+     background-color: grey;
+     vertical-align: middle;
+     margin: 0 0 4px 0;
+   }
+
+   header,
+   footer {
+     display: block;
+     text-align: center;
+    }
+
+    /* MOBILE STYLES */
+
+    #lang {
+      display: block;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
+    #hero-title {
+      padding: 120px 0;
+    }
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -187,9 +249,11 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media only screen and (min-width: 768px) {
+  /***** Tablet styles here *****/
+
+@media only screen and (min-width: 1200px) {
+  /***** Desktop styles here *****/
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
@@ -263,4 +327,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
