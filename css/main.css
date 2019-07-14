@@ -102,6 +102,11 @@ textarea {
    html {
      color: #FFF;
      background-color: #000;
+     font-size: 16px;
+   }
+
+   ul, ol {
+     list-style-type: none;
    }
 
    a {
@@ -109,8 +114,13 @@ textarea {
      text-decoration: none;
    }
 
-   h1, h2, a {
+   h1, h2, h3, h4, h5, h6, a {
      font-family: 'Saira', sans-serif;
+   }
+
+   /* BASE WIDTH & MARGIN */
+   .content-wrapper {
+     width: 95%;
    }
 
    /* NAVIGATION BAR STYLES */
@@ -120,7 +130,7 @@ textarea {
      text-align: center;
      position: fixed;
      transform: rotate(90deg);
-     left: 47%;
+     left: 46%;
      bottom: 50%;
    }
 
@@ -143,8 +153,11 @@ textarea {
      text-align: center;
     }
 
-    /* MOBILE STYLES */
+    /*=================
+        MOBILE STYLES
+     ==================*/
 
+    /* MOBILE HEADER */
     #lang {
       display: block;
       padding: 0;
@@ -155,7 +168,38 @@ textarea {
     }
 
     #hero-title {
-      padding: 120px 0;
+      padding: 200px 0;
+      margin-bottom: 100px;
+    }
+
+    #hero-title h1 {
+      font-size: 42pt;
+      text-transform: uppercase;
+      margin: 50pt 0 0 0;
+      line-height: 1em;
+    }
+
+    #hero-title h2 {
+      margin: 15px 0;
+    }
+
+    /* MOBILE FOOTER */
+    footer ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    footer ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    .icon-link {
+      color: #fff;
+    }
+
+    footer h6 {
+      margin: 10px 0;
     }
 
 
