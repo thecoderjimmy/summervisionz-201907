@@ -118,9 +118,12 @@ textarea {
      font-family: 'Saira', sans-serif;
    }
 
-   /* BASE WIDTH & MARGIN */
+   /***********************************/
+   /******* BASE WIDTH & MARGIN *******/
+   /***********************************/
    .content-wrapper {
-     width: 95%;
+     width: 90%;
+     margin: 50px 0;
    }
 
    /* NAVIGATION BAR STYLES */
@@ -148,9 +151,16 @@ textarea {
    }
 
    header,
-   footer {
+   footer{
      display: block;
      text-align: center;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
     }
 
     /*=================
@@ -182,6 +192,52 @@ textarea {
     #hero-title h2 {
       margin: 15px 0;
     }
+
+
+    /* MOBILE PORTFOLIO */
+
+
+
+
+    /* MOBILE ABOUT */
+    .about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+
+    .about .content-wrapper {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+
+    .about h2 {
+      text-transform: uppercase;
+    }
+
+    .about .about-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+
+    .about article {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .about {
+
+    }
+
 
     /* MOBILE FOOTER */
     footer ul {
